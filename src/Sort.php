@@ -46,4 +46,23 @@ class Sort
 
         return array_merge(self::quickSort($leftArray), [$firstVal], self::quickSort($rightArray));
     }
+
+    public static function bubbleSort($sortArray)
+    {
+        if (count($sortArray) <= 1) {
+            return $sortArray;
+        }
+
+        for ($i = 0; $i < count($sortArray) - 1; $i++) {
+            for ($j = $i + 1; $j < count($sortArray); $j++) {
+                if ($sortArray[$i] > $sortArray[$j]) {
+                    $tmp = $sortArray[$j];
+                    $sortArray[$j] = $sortArray[$i];
+                    $sortArray[$i] = $tmp;
+                }
+            }
+        }
+
+        return $sortArray;
+    }
 }
