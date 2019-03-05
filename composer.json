@@ -1,0 +1,11 @@
+{
+    "name": "aex/sort-for-laravel",
+    "description": "normal sort",
+    "authors": [
+        {
+            "name": "aex",
+            "email": "417969832@qq.com"
+        }
+    ],
+    "require": {}
+}
